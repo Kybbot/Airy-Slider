@@ -1,0 +1,76 @@
+.airy-slider{
+	width: 100%;
+	margin: 20px 0;
+}
+
+.airy-slider-item{
+	height: 100%;
+}
+
+.airy-slider-item img{
+	width: 100%;
+	height: auto;
+}
+
+.airy-arrows{
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.airy-next, .airy-prev{
+	cursor: pointer;
+	padding: 0 5px;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+}
+
+.airy-next:hover, .airy-prev:hover{
+	color: rgb(49, 49, 49);
+}
+
+.airy-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.airy-dot{
+	background-color: #D6D6D6;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin-right: 5px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.airy-active{
+	background-color: #869791;
+}
+
+.airy-dot:hover{
+	background-color: #869791;
+}
+
+.airy-dot:last-child{
+	margin-right: 0;
+}
+
+.airy-fade{
+	animation-name: airy-fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes airy-fade{
+	from{
+		opacity: 0
+	}
+	to{
+		opacity: 1
+	}
+}
